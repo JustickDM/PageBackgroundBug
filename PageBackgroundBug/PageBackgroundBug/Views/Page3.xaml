@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PageBackgroundBug.Views.Page3"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Page 3"
+    Style="{StaticResource ContentPageStyle}">
+
+    <Frame Style="{StaticResource FrameStyle}">
+        <StackLayout>
+            <Label Style="{StaticResource DefaultLableStyle}" Text="Step 2. Change app theme and go to page 4" />
+
+            <Label Style="{StaticResource DefaultLableStyle}" Text="Step 4. Change app theme. Bug is captured" />
+
+            <Label Style="{StaticResource DefaultLableStyle}" Text="Step 5. Go to page 4 again and bug will be fixed" />
+
+            <Button Command="{Binding ChangeAppThemeCommand}" Text="Change app theme" />
+
+            <Button Command="{Binding ToPage4Command}" Text="Go to page 4" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="PageBackgroundBug.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary Source="Resources/AppThemes/LightTheme.xaml" />
+
+            <LinearGradientBrush x:Key="BackgroundLinearGradientBrush" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Offset="0.75" Color="{DynamicResource PrimaryBackgroundColor}" />
+                    <GradientStop Offset="1.0" Color="{DynamicResource SecondaryBackgroundColor}" />
+                </GradientStopCollection>
+            </LinearGradientBrush>
+
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryBackgroundColor}" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Margin" Value="30" />
+            </Style>
+
+            <Style x:Key="DefaultLableStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Default" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="{DynamicResource DefaultTextColor}" />
+            </Style>
+
+            <Style x:Key="ContentPageStyle" TargetType="ContentPage">
+                <!--<Setter Property="BackgroundColor" Value="{DynamicResource PrimaryBackgroundColor}" />-->
+                <Setter Property="Background" Value="{StaticResource BackgroundLinearGradientBrush}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

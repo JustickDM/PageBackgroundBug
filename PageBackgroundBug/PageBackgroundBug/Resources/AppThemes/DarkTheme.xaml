@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="PageBackgroundBug.Resources.AppThemes.DarkTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="PrimaryBackgroundColor">#0C0D17</Color>
+    <Color x:Key="SecondaryBackgroundColor">#121320</Color>
+
+    <Color x:Key="DefaultTextColor">#ABACC6</Color>
+
+    <Color x:Key="SelectedTabColor">#A4B5E0</Color>
+    <Color x:Key="UnselectedTabColor">#373D4F</Color>
+</ResourceDictionary>
